@@ -1,0 +1,40 @@
+{
+  // 🔧 Основной форматтер — Prettier
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // ✅ Форматировать при сохранении
+  "editor.formatOnSave": true,
+
+  // ✅ Автоисправление через ESLint при сохранении
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+
+  // 📝 Языковые настройки
+  "[typescript][typescriptreact][javascript][javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[json][jsonc][markdown][css][scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // 🛠 ESLint: включить валидацию для нужных языков
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  // 🚫 Отключить встроенный форматтер TypeScript (чтобы не конфликтовал с Prettier)
+  "typescript.preferences.useEditorFormatting": true,
+  "javascript.preferences.useEditorFormatting": true,
+
+  // 🔍 Автодополнение и типизация
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true
+
+  // 🖼️ Опционально: автосохранение (если хочешь ещё быстрее)
+  // "files.autoSave": "onFocusChange"
+}
