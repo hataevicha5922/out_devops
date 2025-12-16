@@ -1,1 +1,2 @@
-const main = 'Main update'
+const main = 'Main update';
+const newString = 'String'
